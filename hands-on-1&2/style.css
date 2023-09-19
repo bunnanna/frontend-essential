@@ -64,8 +64,12 @@ main {
 	}
 }
 footer {
-	height: 30px;
+	min-height: 30px;
 	padding: 10px;
 	background-color: blue;
-	color: #fbfbfb;
+
+	text-align: center;
+	& div {
+		color: #fbfbfb;
+	}
 }
