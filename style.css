@@ -1,3 +1,8 @@
+* {
+	margin: 5px 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 .card {
 	background-color: azure;
 	margin: 10px;
@@ -11,4 +16,17 @@
 	& * {
 		margin: 10px;
 	}
+}
+.minestone-container {
+	display: flex;
+	gap: 10px;
+	& > .card {
+		flex: 1;
+	}
+}
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: rgba(255, 102, 0, 0.5);
 }
