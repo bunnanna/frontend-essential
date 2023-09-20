@@ -7,21 +7,25 @@
 
 .nav-container {
 	position: sticky;
+	top: 0;
 	display: flex;
 	flex-direction: column;
+	background-color: #fff;
 	& > div {
 		height: 40px;
 	}
 }
 
 .navbar {
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	gap: 30px;
 }
 .nav-menu-group {
-	width: 70vw;
+	flex: 1;
 	display: flex;
 	justify-content: space-between;
 }
@@ -37,6 +41,9 @@
 	display: flex;
 	align-items: center;
 	gap: 5px;
+}
+.nav-burger {
+	display: none;
 }
 
 .nav-undernav {
@@ -56,12 +63,13 @@
 .main-content {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	background: #eeeeee;
 	gap: 50px;
+	width: 100vw;
 }
 .content {
-	width: 70%;
-	margin: 0 auto;
+	margin: 0 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -76,6 +84,8 @@
 .content-card-group {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	justify-items: center;
 }
 
 .content-card {
@@ -122,4 +132,22 @@
 footer {
 	background: #eeeeee;
 	height: 40px;
+}
+
+@media (max-width: 1080px) {
+	.content-card-group {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 748px) {
+	.nav-menu-group,
+	.nav-icon {
+		display: none;
+	}
+	.nav-burger {
+		display: block;
+	}
+	.content-card-group {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
