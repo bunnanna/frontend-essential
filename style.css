@@ -17,6 +17,9 @@
 		margin: 10px;
 	}
 }
+ol {
+	list-style-position: inside;
+}
 .minestone-container {
 	display: flex;
 	gap: 10px;

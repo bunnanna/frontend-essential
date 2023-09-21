@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 28px;
+}
+.header-zone {
+	background-color: crimson;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header {
+	width: 90vw;
+	margin: auto;
+	text-align: center;
+}
+.header-text {
+	font-size: 48px;
+	color: aliceblue;
+}
+.todo-form {
+	height: 30px;
+}
+.todo-input {
+	padding: 10px;
+}
+.todo-add {
+	padding: 10px;
+}
+.dat {
+	text-decoration: line-through;
+}
+.todo-list {
+	border: 1px solid;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	& > * {
+		padding: 20px;
+	}
+}
+.todo-list:nth-child(even) {
+	background-color: darkgray;
+}
+.todo-list:nth-child(odd) {
+	background-color: lightgray;
+}
+
+.close-btn {
+	cursor: pointer;
+}

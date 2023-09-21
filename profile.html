@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<nav class="nav-container">
@@ -18,7 +19,7 @@
 		<div class="minestone-container">
 			<section class="card">
 				<h2>Frontend Milestone</h2>
-				<ol>
+				<ol id="Frontend-list">
 					<li>Javascript</li>
 					<li>html</li>
 					<li>
@@ -31,7 +32,7 @@
 			</section>
 			<section class="card">
 				<h2>Backend Milestone</h2>
-				<ol>
+				<ol id="Backend-list">
 					<li>Node.js</li>
 					<li>Express</li>
 					<li>Docker</li>
@@ -43,14 +44,15 @@
 		</div>
 
 		<section>
-			<form action="./profile.html">
-				<label for="Username">Username:</label>
-				<input type="email" name="Username" id="Username" required />
-				<div>
-					<label for="Password">Password:</label>
-					<input type="password" name="Password" id="Password" />
-				</div>
-				<button type="submit">Login</button>
+			<form>
+				<label for="Frontend">Frontend:</label>
+				<input type="text" name="Frontend" id="Frontend-input" required />
+				<button type="submit" id="Frontend-btn">summit</button>
+			</form>
+			<form action="">
+				<label for="Backend">Backend:</label>
+				<input type="text" name="Backend" id="Backend-input" />
+				<button type="submit" id="Backend-btn">summit</button>
 			</form>
 		</section>
 		<footer style="background-color: black; height: 10px"></footer>
