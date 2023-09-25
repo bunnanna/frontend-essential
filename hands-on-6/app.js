@@ -15,14 +15,14 @@ const cardtemplate = (data) => {
 };
 
 const main = async () => {
-	const data = await fetch("https://api.minireg.thanayut.in.th/courses")
+	const datas = await fetch("https://api.minireg.thanayut.in.th/courses")
 		.then((res) => res.json())
 		.catch((err) => console.log(err));
-	if (data?.error) {
-		console.log(data?.error);
+	if (datas?.error) {
+		console.log(datas?.error);
 		return;
 	}
-	const allcard = data?.courses.reduce((prev, curr) => {
+	const allcard = datas?.courses.reduce((prev, curr) => {
 		prev += cardtemplate(curr);
 		return prev;
 	}, "");
